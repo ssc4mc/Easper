@@ -215,7 +215,7 @@ class Wav2ElanTranscriber:
 
             if self.secondary_basename:
                 if self.secondary_basename.startswith('whisper'):
-                    segment_np = audio_segment.squeeze().numpy()
+                    segment_np = audio_segment.squeeze()
                     if segment_np.size == 0:
                         seg_text2 = ""
                         words_data2 = []
